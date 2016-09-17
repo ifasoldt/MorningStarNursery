@@ -1,0 +1,14 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h2>NEW PUPPY</h2>
+  <%= simple_form_for @puppy do |f| %>
+    <%= f.input_field :visible, as: :boolean, label: false, inline_label: "Visible?" %>
+    <%= f.input :name %>
+    <%= f.label :image, label: 'Image' %>
+    <%= f.attachment_field :image %>
+    <%= f.input :color %>
+    <%= f.input :status, collection: ['available', 'sold'] %>
+    <%= f.input :dob, as: :date, start_year: Date.today.year - 2, end_year: Date.today.year, discard_day: false, order: [:month, :day, :year] %>
+    <%= f.input :description %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

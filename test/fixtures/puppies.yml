@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  dob: 2016-09-17
+  color: MyString
+  status: MyString
+  description: MyText
+
+two:
+  name: MyString
+  dob: 2016-09-17
+  color: MyString
+  status: MyString
+  description: MyText

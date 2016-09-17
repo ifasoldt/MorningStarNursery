@@ -19,13 +19,23 @@ gem 'coffee-rails', '~> 4.2'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+# gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt', '~> 3.1.7'
+gem 'pry-rails'
+gem 'simple_form'
+github 'sinatra/sinatra' do
+  gem 'rack-protection'
+end
+gem 'refile', github: 'refile/refile', require: 'refile/rails'
+gem 'refile-mini_magick', github: 'refile/refile-mini_magick'
+gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
+gem 'refile-postgres', '~> 1.4'
+
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
