@@ -7,9 +7,17 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
-      render json: @contact, status: 200
+      flash.notice = "Message successfully sent"
+      redirect_to root_path
     else
-      render json: @contact.errors, status: 404
+      flash.alert = "Please make sure your email and message are present"
+      redirect_back fallback_location: root_path
     end
+  end
+
+  private
+
+  def contact_params
+    params.require(:contact).permit(:name, :email, :phone, :message)
   end
 end

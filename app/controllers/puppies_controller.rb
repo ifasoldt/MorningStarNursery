@@ -2,6 +2,7 @@ class PuppiesController < ApplicationController
 
   def index
     @puppies = Puppy.where(visible: true)
+    @contact = Contact.new
   end
 
   def new
