@@ -14,12 +14,11 @@
                             <!-- Project Details Go Here -->
                             <h2><%= puppy.name %></h2>
                             <%= image_tag attachment_url(puppy, :image, :fill, 800, 800, format: "jpg"), class: 'img-responsive img-centered' %>
-                            <p><%= puppy.description %></p>
-                                <strong>Want these icons in this portfolio item sample?</strong>You can download 60 of them for free, courtesy of <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">RoundIcons.com</a>, or you can purchase the 1500 icon set <a href="https://getdpd.com/cart/hoplink/18076?referrer=bvbo4kax5k8ogc">here</a>.</p>
-                            <ul class="list-inline">
-                                <li><%= puppy.dob %></li>
-                                <li><%= puppy.color %></li>
-                                <li><%= puppy.status %></li>
+                            <ul class="list-unstyled puppy-info">
+                                <li><strong>Birthdate: </strong><%= puppy.dob %></li>
+                                <li><strong>Coloring:</strong> <%= puppy.color %></li>
+                                <li><strong>Status:</strong> <%= puppy.status %></li>
+                                <li><strong>Description:</strong> <%= puppy.description %></li>
                             </ul>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
                         </div>

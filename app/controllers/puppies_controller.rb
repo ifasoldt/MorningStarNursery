@@ -3,6 +3,7 @@ class PuppiesController < ApplicationController
   def index
     @puppies = Puppy.where(visible: true)
     @contact = Contact.new
+    @family_members = FamilyMember.all
   end
 
   def new
@@ -14,6 +15,7 @@ class PuppiesController < ApplicationController
   end
 
   def update
+    @puppy = Puppy.find(params[:id])
     if @puppy.update(puppy_params)
       redirect_to root_path
     else

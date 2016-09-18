@@ -1,0 +1,10 @@
+<div class="col-xs-10 col-xs-offset-1">
+  <h2>EDIT FAMILY MEMBER</h2>
+  <%= simple_form_for @family_member do |f| %>
+    <%= f.input :name %>
+    <%= f.label :image, label: 'Image' %>
+    <%= f.attachment_field :image %>
+    <%= f.input :description %>
+    <%= f.button :submit %>
+  <% end %>
+</div>

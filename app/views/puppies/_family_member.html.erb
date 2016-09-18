@@ -1,0 +1,15 @@
+<div class="row family-member-box">
+  <div class="col-xs-2 text-center">
+    <% if family_member.image %>
+      <%= image_tag attachment_url(family_member, :image, :fill, 500, 500, format: "jpg"), class:"img-responsive img-centered img-circle bio-img" %>
+    <% end %>
+    <h5><%= family_member.name %></h5>
+    <% if current_admin %>
+      <%= link_to 'edit', edit_family_member_path(family_member.id) %>
+      <%= link_to 'delete', "/family_members/#{family_member.id}", method: 'delete' %>
+    <% end %>
+  </div>
+  <div class="col-xs-9 col-xs-offset-1 bio-box">
+    <span><%= family_member.description %></span>
+  </div>
+</div>
