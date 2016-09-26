@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
+      ContactNoticeMailer.contact_mailer(@contact).deliver_now
       flash.notice = "Message successfully sent"
       redirect_to root_path
     else

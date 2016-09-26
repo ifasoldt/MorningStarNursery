@@ -1,0 +1,156 @@
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="/">Morning Star Nursery</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse back-black" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <% if current_admin %>
+                <li>
+                    <a class="page-scroll" href="/puppies/new">New Puppy</a>
+                </li>
+                <li>
+                    <%= link_to 'New Family Member', new_family_member_path, class:'page-scroll' %>
+                </li>
+                <li>
+                    <a class="page-scroll" href="/logout">Logout</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#">Welcome <%= current_admin.username %></a>
+                </li>
+                <% else %>
+                <% end %>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+  <!-- Page Content -->
+  <div class="container gallery-top">
+
+      <div class="row">
+
+          <div class="col-lg-12">
+              <h1 class="page-header">Past Puppy Gallery</h1>
+          </div>
+
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/106.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/117.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_4445.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_0760.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_3344.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_3358.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_4415.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/IMG_4426.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/iphone1.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/iphone2.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/iphone3.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/iphone4.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/5.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/6.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/7.JPG" alt="">
+              </a>
+          </div>
+          <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+              <a class="thumbnail" href="#">
+                  <img class="img-responsive" src="/img/8.JPG" alt="">
+              </a>
+          </div>
+      </div>
+
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+          <div class="row">
+              <div class="col-lg-12">
+                  <p>Copyright &copy; Your Website 2014</p>
+              </div>
+          </div>
+      </footer>
+
+  </div>
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Theme JavaScript -->
+  <script src="js/agency.min.js"></script>

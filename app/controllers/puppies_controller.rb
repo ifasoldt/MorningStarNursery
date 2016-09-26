@@ -34,6 +34,9 @@ class PuppiesController < ApplicationController
     end
   end
 
+  def past_puppies
+  end
+
   private
 
   def puppy_params
