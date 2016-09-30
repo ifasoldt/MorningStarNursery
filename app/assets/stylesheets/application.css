@@ -247,7 +247,7 @@
     }
   }
   header {
-    background-image: url('header_banner.jpg');
+    background-image: url('header_banner.JPG');
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -805,7 +805,7 @@
   }
 
   .map_banner{
-    background-image: url('morning_star_map.png');
+    background-image: url('morning_star_map.PNG');
     height: 250px;
   }
 
