@@ -19,10 +19,16 @@
                     </li>
                     <% if current_admin %>
                     <li>
+                        <%= link_to 'New Sire', new_sire_path, class:'page-scroll' %>
+                    </li>
+                    <li>
+                        <%= link_to 'New Dam', new_dam_path, class:'page-scroll' %>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="/puppies/new">New Puppy</a>
                     </li>
                     <li>
-                        <%= link_to 'New Family Member', new_family_member_path, class:'page-scroll' %>
+                        <%= link_to 'New Person', new_family_member_path, class:'page-scroll' %>
                     </li>
                     <li>
                         <a class="page-scroll" href="/logout">Logout</a>
@@ -140,7 +146,7 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <%= image_tag "scan124.jpg", class: "img-responsive img-circle"%>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -154,7 +160,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <%= image_tag "scan13.jpg", class: "img-responsive img-circle"%>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -168,7 +174,7 @@
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <%= image_tag "baby_minnie.JPG", class: "img-responsive img-circle"%>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -182,7 +188,7 @@
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <%= image_tag "first_litter.JPG", class: "img-responsive img-circle"%>
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
@@ -235,7 +241,7 @@
                     <div class="team-member">
                         <%= image_tag "zeus.jpeg", class: "img-responsive img-circle dog-img"%>
                         <h4 class="text-white">Zeus</h4>
-                        <p class="text-muted">Zeus, our own solid lier stud, lives with a delightful family of 5 boys. He fits right in there and gets a lot of attention, care and love. He is very smart and obedient. (Stud service--$500)</p>
+                        <p class="text-muted">Zeus, our own solid liver stud, lives with a delightful family of 5 boys. He fits right in there and gets a lot of attention, care and love. He is very smart and obedient. (Stud service--$500)</p>
                     </div>
                 </div>
                 <div class="col-sm-4">
@@ -335,6 +341,9 @@
                             <a href="/login_form">Admin</a>
                           <% else %>
                             <a href="/logout">Logout</a>
+                            <%= link_to "All Puppies", puppies_path, class: "spacer" %>
+                            <%= link_to "All Sires", sires_path, class: "spacer" %>
+                            <%= link_to "All Dams", dams_path, class: "spacer" %>
                           <% end %>
                         </li>
                     </ul>

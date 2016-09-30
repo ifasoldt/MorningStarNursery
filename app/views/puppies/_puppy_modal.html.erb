@@ -20,6 +20,16 @@
                                 <li><strong>Status:</strong> <%= puppy.status %></li>
                                 <li><strong>Description:</strong> <%= puppy.description %></li>
                             </ul>
+                            <% if puppy.dam %>
+                              <h3 class="pink-text">Dam: <%= puppy.dam.name %></h3>
+                              <%= image_tag attachment_url(puppy.dam, :image, :fill, 400, 400, format: "jpg"), class: 'img-responsive img-centered' %>
+                              <h5><%= puppy.dam.description %></h5>
+                            <% end %>
+                            <% if puppy.sire %>
+                              <h3 class="blue-text">Sire: <%= puppy.sire.name %></h3>
+                              <%= image_tag attachment_url(puppy.sire, :image, :fill, 400, 400, format: "jpg"), class: 'img-responsive img-centered' %>
+                              <h5><%= puppy.sire.description %></h5>
+                            <% end %>
                             <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Back</button>
                         </div>
                     </div>

@@ -820,3 +820,15 @@
   .gallery-top{
     margin-top: 100px;
   }
+
+  .blue-text{
+    color:blue;
+  }
+
+  .pink-text{
+    color:pink;
+  }
+
+  .spacer {
+    margin: 0 5px 0 5px;
+  }

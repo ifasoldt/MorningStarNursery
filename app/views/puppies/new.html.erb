@@ -9,6 +9,8 @@
     <%= f.input :status, collection: ['available', 'sold'] %>
     <%= f.input :dob, as: :date, start_year: Date.today.year - 2, end_year: Date.today.year, discard_day: false, order: [:month, :day, :year] %>
     <%= f.input :description %>
+    <%= f.association :sire %>
+    <%= f.association :dam %>
     <%= f.button :submit %>
   <% end %>
 </div>
