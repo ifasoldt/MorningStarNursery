@@ -38,6 +38,7 @@ gem 'refile-postgres', '~> 1.4'
 gem 'sendgrid'
 gem 'figaro'
 
+gem 'rails_12factor', group: :production
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
