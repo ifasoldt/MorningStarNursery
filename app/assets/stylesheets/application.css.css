@@ -279,7 +279,7 @@ fieldset[disabled] .btn-xl.active {
 }
 
 header {
-  background-image: image-url("header_banner.JPG");
+  background-image: asset-data-url("header_banner.JPG");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
