@@ -10,8 +10,10 @@ Rails.application.configure do
   :password => ENV["sendgrid_password"],
   }
 
+  config.cache_classes = true
   config.serve_static_assets = true
   config.assets.compile = true
+  config.assets.digest = true
 
 
   # Code is not reloaded between requests.
