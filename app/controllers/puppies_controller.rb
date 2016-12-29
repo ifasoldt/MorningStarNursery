@@ -37,7 +37,7 @@ class PuppiesController < ApplicationController
   def past_puppies
   end
 
-  def delete
+  def destroy
     @puppy = Puppy.find(params[:id])
     @puppy.delete
     redirect_back fallback_location: root_path
