@@ -11,6 +11,6 @@
         <h4 class="text-midnight"><%= puppy.name %></h4>
         <p class="text-muted"><%= puppy.status %></p>
         <%= link_to 'edit', edit_puppy_path(puppy.id) if current_admin %>
-        <%= link_to 'delete', puppy_path(puppy.id), method: :delete data: {confirm: "Are you sure you want to delete this puppy?"} if current_admin %>
+        <%= link_to 'delete', puppy_path(puppy.id), method: :delete, data: {confirm: "Are you sure you want to delete this puppy?"} if current_admin %>
     </div>
 </div>
