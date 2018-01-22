@@ -1,1 +1,17 @@
-<%= contact.name %>
+<div class="contact-row">
+  <div class="contact-cell contact-short">
+    <%= contact.created_at.strftime('%m/%d/%Y') %>
+  </div>
+  <div class="contact-cell contact-short">
+    <%= contact.name %>
+  </div>
+  <div class="contact-cell contact-short">
+    <%= contact.email %>
+  </div>
+  <div class="contact-cell contact-short">
+    <%= contact.phone %>
+  </div>
+  <div class="contact-cell contact-long">
+    <%= contact.message %>
+  </div>
+</div>

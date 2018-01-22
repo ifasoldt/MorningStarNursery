@@ -1,7 +1,8 @@
 class ContactsController < ApplicationController
   before_action :require_admin, only: [:index]
+
   def index
-    @contact = Contact.all
+    @contacts = Contact.all.order('created_at desc')
   end
 
   def create

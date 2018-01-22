@@ -1,3 +1,38 @@
 // Place all the styles related to the Contacts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  .contact-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 100%;
+    border-top: 1px black solid;
+    &.contact-header {
+      font-weight: bold;
+    }
+    .contact-cell {
+      padding: 4px 2px;
+      display: flex;
+      align-items: center;
+      flex-grow: 0;
+      flex-shrink: 0;
+      border-right: 1px black solid;
+      &.contact-short {
+        flex-basis: 15%;
+      }
+      &.contact-long {
+        flex-basis: 40%;
+      }
+
+    }
+
+  }
+  .contact-row:last-of-type {
+    border-bottom: 1px black solid;
+  }
+}
