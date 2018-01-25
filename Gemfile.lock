@@ -241,7 +241,7 @@ DEPENDENCIES
   rails_12factor
   refile!
   refile-mini_magick!
-  refile-postgres (~> 1.4)
+  refile-postgres (~> 1.4.0)
   sass-rails (~> 5.0)
   sendgrid
   simple_form

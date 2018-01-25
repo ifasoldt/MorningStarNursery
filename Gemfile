@@ -34,9 +34,9 @@ end
 gem 'refile', github: 'refile/refile', require: 'refile/rails'
 gem 'refile-mini_magick', github: 'refile/refile-mini_magick'
 gem 'sinatra', github: 'sinatra/sinatra', branch: 'master'
-gem 'refile-postgres', '~> 1.4'
 gem 'sendgrid'
 gem 'figaro'
+gem 'refile-postgres', '~> 1.4.0'
 
 gem 'rails_12factor', group: :production
 
